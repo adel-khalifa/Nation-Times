@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">Nation Times</string>
+    <string name="saved_article">Saved Article</string>
+    <string name="breaking_news">Breaking News</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search...</string>
+</resources>
