@@ -1,4 +1,4 @@
-package com.unknown.nationtimes.data
+package com.unknown.nationtimes.data.models
 
 
 import com.google.gson.annotations.SerializedName

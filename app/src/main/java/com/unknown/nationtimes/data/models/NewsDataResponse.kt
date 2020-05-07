@@ -1,7 +1,7 @@
-package com.unknown.nationtimes.data
+package com.unknown.nationtimes.data.models
 
 
-import com.google.gson.annotations.SerializedName
+import com.unknown.nationtimes.data.models.Article
 
 data class NewsDataResponse(
     val articles: List<Article>,
