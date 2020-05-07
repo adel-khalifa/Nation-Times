@@ -3,5 +3,6 @@
     <string name="saved_article">Saved Article</string>
     <string name="breaking_news">Breaking News</string>
     <string name="search">Search</string>
-    <string name="search_hint">Search...</string>
+    <string name="search_hint">Search…</string>
+    <string name="onLoadingState">Loading News</string>
 </resources>

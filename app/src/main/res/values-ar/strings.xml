@@ -3,4 +3,6 @@
     <string name="saved_article">الأخبار المحفوظة</string>
     <string name="breaking_news">الأخبار العاجلة</string>
     <string name="search">البحث</string>
+    <string name="search_hint">ابحث...</string>
+    <string name="onLoadingState">جار تحميل الاخبار</string>
 </resources>
