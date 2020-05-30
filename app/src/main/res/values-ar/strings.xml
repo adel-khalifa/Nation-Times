@@ -5,4 +5,9 @@
     <string name="search">البحث</string>
     <string name="search_hint">ابحث...</string>
     <string name="onLoadingState">جار تحميل الاخبار</string>
+    <string name="no_result_found">لا يوجد نتائج</string>
+    <string name="article_has_been_saved">تم حفظ المقال</string>
+    <string name="undo">تراجع</string>
+    <string name="no_internet_connection">لا يوجد اتصال بالأنترنت</string>
+    <string name="network_failure">خطاء فى الأتصال</string>
 </resources>
