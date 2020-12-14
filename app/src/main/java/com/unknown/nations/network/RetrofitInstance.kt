@@ -1,5 +1,6 @@
 package com.unknown.nations.network
 
+import com.unknown.nations.BuildConfig
 import com.unknown.nations.util.Constants
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -15,7 +16,7 @@ class RetrofitInstance {
         private val retrofit by lazy {
             // using interceptor to inject a stable query parameter which is key
             val keyInterceptor  = Interceptor.invoke { chain ->
-                val url =chain.request().url.newBuilder().addQueryParameter("apiKey", Constants.API_KEY).build()
+                val url =chain.request().url.newBuilder().addQueryParameter("apiKey", BuildConfig.API_KEY).build()
                 val request = chain.request().newBuilder().url(url).build()
                 chain.proceed(request)
             }

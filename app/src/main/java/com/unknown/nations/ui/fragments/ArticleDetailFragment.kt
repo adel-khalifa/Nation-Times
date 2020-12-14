@@ -36,7 +36,7 @@ class ArticleDetailFragment : Fragment(R.layout.fragment_article_detail) {
         webView.apply {
             // as explicit intent , to make sure this webView is the main host of article url
             webViewClient = WebViewClient()
-            loadUrl(article.url)
+            loadUrl(article.url.toString())
         }
         fab.setOnClickListener {
             viewModel.insertOrUpdateThisArticle(article)

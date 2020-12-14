@@ -74,7 +74,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news),
                                 setViewToSuccessState(searchResultResponse)
                                 isLastArticleReached =
                                     ((searchAdapter.asyncListDiffer.currentList.size >= 100) or
-                                            (searchAdapter.asyncListDiffer.currentList.size == searchResultResponse?.bodyData?.articles?.size))
+                                            (searchAdapter.asyncListDiffer.currentList.size == searchResultResponse.bodyData?.articles?.size))
                                 isLoading = false
                                 if (isLastArticleReached) {
                                     search_recycler.setPadding(0, 0, 0, 0)
@@ -131,7 +131,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news),
             val scrolledBitDown = firstShownArticlePosition > 0
             val atBottomOfRecycler =
                 sumOfVisibleArticlePositions + firstShownArticlePosition >= allArticlesInRecycler
-            val requestHasMoreThanPageContent = allArticlesInRecycler >= 20
+            //val requestHasMoreThanPageContent = allArticlesInRecycler >= 20
             if (scrolledBitDown && atBottomOfRecycler && !isLastArticleReached && !isLoading) {
                 viewModel.getAllNews(
                     setupQueryHashMap(search_et.text.toString()),
