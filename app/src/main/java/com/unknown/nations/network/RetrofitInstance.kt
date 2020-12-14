@@ -8,9 +8,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInstance {
+object RetrofitInstance {
 
-    companion object {
         // using lazy to init it just when needed
 
         private val retrofit by lazy {
@@ -46,4 +45,3 @@ class RetrofitInstance {
 
 
     }
-}
