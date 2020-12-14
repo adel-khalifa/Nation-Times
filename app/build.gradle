@@ -14,8 +14,8 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        // add you api key in the (gradle.properties)'s API_KEY field
         buildConfigField("String","API_KEY",API_KEY)
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

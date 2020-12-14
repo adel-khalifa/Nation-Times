@@ -15,6 +15,7 @@ class RetrofitInstance {
 
         private val retrofit by lazy {
             // using interceptor to inject a stable query parameter which is key
+            // make sure to update the (gradle.properties)'s API_KEY field
             val keyInterceptor  = Interceptor.invoke { chain ->
                 val url =chain.request().url.newBuilder().addQueryParameter("apiKey", BuildConfig.API_KEY).build()
                 val request = chain.request().newBuilder().url(url).build()
